@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Yekan';
+    src: url('../Yekan-Font-master/Yekan.eot'); /* IE9 Compat Modes */
+    src: url('../Yekan-Font-master/?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../Yekan-Font-master/Yekan.woff2') format('woff2'), /* Modern Browsers */
+    url('../Yekan-Font-master/Yekan.woff') format('woff'), /* Modern Browsers */
+    url('../Yekan-Font-master/Yekan.otf') format('opentype'), /* Open Type Font */
+    url('../Yekan-Font-master/Yekan.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../Yekan-Font-master/Yekan.svg#Yekan') format('svg'); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* color variables*/
+
+:root {
+    --main-bg-color: #f0f0f0;
+    --item-hover-bg: #00b4d8;
+    --item-hover-color: #fff;
+    --item-bg-color: #fff;
+    --box-header-bg: #00b4d8;
+    --box-header-color: #fff;
+}
+
+body {
+    font-family: "yekan";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--item-hover-bg);
+}
+
+/* container */
+
+.box {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+	0 10px 10px rgba(0,0,0,0.22);
+    
+}
+
+/* box header  */
+
+.box-header {
+    padding: 10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--box-header-bg);
+    color: var(--box-header-color);
+}
+
+/* header text */
+
+.box-header p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* ul style */
+
+.list {
+    position: relative;
+    padding: unset;
+    width: 100%;
+    text-align: right;
+}
+
+/* li style */
+
+.item {
+    list-style: none;
+    padding: 15px 40px;
+    box-shadow: 0 5px 25px rgba(0,0,0,.1);
+    position: relative;
+    background: var(--item-bg-color);
+    cursor: pointer;
+    transition: all 0.3s;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+/* item text */
+
+.item div {
+    font-weight: 600;
+}
+
+/* item hover style */
+
+.item:hover {
+    transform: scale(1.1);
+    z-index: 100;
+    background: var(--item-hover-bg);
+    color: var(--item-hover-color);
+}
+
+/* circle icon */
+
+.item i {
+    color: var(--item-hover-bg);
+}
+
+.item:hover i {
+    color: var(--item-hover-color);
+}
+
+/* circle icon */
+
+.fa-circle{
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+}
