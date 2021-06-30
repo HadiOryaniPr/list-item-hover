@@ -121,7 +121,7 @@ body {
 
 .fa-circle{
     position: absolute;
-    left: 13px;
+    left: 20px;
     top: 50%;
     transform: translateY(-50%);
 }
