@@ -21,8 +21,8 @@
 /* color variables*/
 
 :root {
-    --main-bg-color: #f0f0f0;
-    --item-hover-bg: #480ca8;
+    --main-bg-color: #480ca8;
+    --item-hover-bg: #500ebb;
     --item-hover-color: #fff;
     --item-bg-color: #fff;
     --box-header-bg: #560bad;
@@ -34,7 +34,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--item-hover-bg);
+    background: var(--main-bg-color);
 }
 
 /* container */
