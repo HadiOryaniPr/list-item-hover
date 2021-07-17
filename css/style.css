@@ -119,7 +119,7 @@ body {
 
 /* circle icon */
 
-.fa-circle{
+.fa-circle, .fa-check-circle {
     position: absolute;
     left: 20px;
     top: 50%;
